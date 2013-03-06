@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 #include "C.hpp"
 #include "dmat.hpp"

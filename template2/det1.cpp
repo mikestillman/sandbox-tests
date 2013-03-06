@@ -9,7 +9,7 @@ int det1(const C &c) {
 
 
 int det1(const DMat<int> &c) {
-  std::cout << "calling B<int> version of det1" << std::endl;
+  std::cout << "calling DMat<int> version of det1" << std::endl;
   return 80;
 }
 
