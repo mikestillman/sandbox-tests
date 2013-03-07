@@ -19,7 +19,7 @@ public:
   static int rank(const DMat<T>& m)
   {
     std::cout << "calling DMat<T> version of rank" << std::endl;
-    return 17;
+    return DMatRank;
   }
 };
 
