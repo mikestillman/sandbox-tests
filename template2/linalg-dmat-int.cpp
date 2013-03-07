@@ -1,5 +1,5 @@
 #include <iostream>
-#include "dmat.hpp"
+#include "linalg-dmat.hpp"
 
 template <> int LinAlg< DMat<int> >::rank(const DMat<int>& m)
 {

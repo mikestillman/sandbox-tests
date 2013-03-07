@@ -20,3 +20,4 @@ public:
   }
 };
 
+template <> int LinAlg<int>::rank(const int &m);

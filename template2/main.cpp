@@ -2,6 +2,8 @@
 #include "det1.hpp"
 
 #include "A.hpp"
+#include "linalg-C.hpp"
+#include "linalg-dmat.hpp"
 
 #include <assert.h>
 

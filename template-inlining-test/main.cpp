@@ -5,6 +5,8 @@ g++ -O2 main.cpp B.cpp -o main  # this version calls A<int>::f
 
 #include "A.hpp"
 
+template<> void A<int>::f();
+
 int main(int argc, char **argv)
 {
   A<int>::f();

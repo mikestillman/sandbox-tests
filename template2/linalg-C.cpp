@@ -1,5 +1,4 @@
-#include "linalg.hpp"
-#include "C.hpp"
+#include "linalg-C.hpp"
 
 template <> int LinAlg<C>::rank(const C& m)
 {
