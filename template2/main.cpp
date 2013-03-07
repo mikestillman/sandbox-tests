@@ -4,6 +4,7 @@
 #include "A.hpp"
 #include "linalg-C.hpp"
 #include "linalg-dmat.hpp"
+#include "linalg-int.hpp"
 
 #include <assert.h>
 
