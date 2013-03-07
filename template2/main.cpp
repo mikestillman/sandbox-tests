@@ -3,27 +3,34 @@
 
 #include "A.hpp"
 
+#include <assert.h>
+
+
 int main(int argc, char **argv)
 {
   C m1(14);
   A *mat = new B<C>(m1);
-  int val = mat->rank();
+  assert( mat->rank() == CRank ) ;
 
   DMat<int> m2(6);
   A * mat2 = new B< DMat<int> >(m2);
-  int val2 = mat2->rank();
+  assert( mat2->rank() == DMatIntRank ) ;
 
   int m3(4);
   A * mat3 = new B<int>(m3);
-  int val3 = mat3->rank();
-
-  int d1 = mat->det();
-  int d2 = mat2->det();
-  int d3 = mat3->det();
+  assert( intRank == mat3->rank() );
 
   DMat<double> m4(6.0);
   A * mat4 = new B< DMat<double> >(m4);
-  int val4 = mat4->rank();
+  assert( mat4->rank() == DMatRank ) ;
+  
+  double m5(7.0);
+  A* mat5 = new B<double>(m5);
+  assert(mat5->rank()==genericRank);
+    
+  int d1 = mat->det();
+  int d2 = mat2->det();
+  int d3 = mat3->det();
   int d4 = mat4->det();
 
   return 0;
