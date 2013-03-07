@@ -1,4 +1,6 @@
 CC = g++
+CPPFLAGS += -Wall -O3
+CXXFLAGS += --std=gnu++0x
 
 all: main
 
