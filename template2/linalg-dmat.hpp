@@ -15,4 +15,11 @@ public:
   }
 };
 
-template <> int LinAlg< DMat<int> >::rank(const DMat<int>& m);
+template <>
+class LinAlg< DMat<int> >
+{
+public:
+  static int rank(const DMat<int>& m);
+};
+
+//template <> int LinAlg< DMat<int> >::rank(const DMat<int>& m);
